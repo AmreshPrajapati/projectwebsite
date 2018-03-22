@@ -1,40 +1,71 @@
 <html>
+  <head><title>Online Compiler</title>
+    <link rel="stylesheet" href="styles.css">
 
-<head>
-	<title>LNCT Progect</title>
-</head>
-<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+    <footer class="header-basic-centered">
 
-<body>
-	<div class="main_container">
-		<div class="areatitle">
-			<h1><center>Online Programming Plateform</center></h1>
-		</div>
-		<div class="arealang">
-			<input type="checkbox" name="c" value="c" /><b> C
-			<input type="checkbox" name="c++" /> C++
-			<input type="checkbox" name="java" value="java" /> Java</b>
-		</div>
-		<div class="areaname">
-			<div>
-				<p style="margin-left: 20px;">Program Name: <input type="text" name="name" /></p>
-			</div>
-			<div>
-				<p> Output: </p>
-			</div>
-		</div>
-		<div class="areaio">
-			<div>
-				<textarea class="foo" rows="30" cols="60">Write your code here</textarea>
-			</div>
-			<div>
-				<div class="output"></div>
-			</div>
-		</div>
-		<div class="arearun">
-			<input type="submit" value="          Run         " height="30" />
-		</div>
-		<br>
-</body>
+  <h1 align="center">Hello Programmers</h1>
 
+    			<!-- <p class="footer-company-name">2018</p> -->
+
+    	</footer>
+  </div>
+
+
+
+    <div id="content">
+	<input type="text" placeholder="Username" id="username">
+	</br></br></br>
+	<input type="text" placeholder="Program Name" id="prog_name">
+	<select id="LanguageSelected">
+        	<option value="C">C  (.c)</option>
+       		<option value="C++">C++  (.cpp)</option>
+        	<option value="Java">Java  (.java)</option>
+        	<option value="Python">Python2.7  (.py)</option>
+	</select>
+
+
+    </br></br>
+    <textarea id ="postText" rows=10 cols=50></textarea>
+    <span id="charCounter">Characters: 0</span>
+
+    <br/></br>
+      <input type="submit" value="   Run   " id="run" class="buttons">
+    </br></br>
+      <form id="form1" name="form1" method="post" action="" align="right">
+        <input name="checkbox" type="checkbox" id="checkbox" onchange="toggleTextArea();" value="1" text-align=right />
+        <label for="checkbox">Custom Input</label>
+        <!-- <label for="textfield2">dsfds</label> -->
+        <textarea class="ci" style="display: none;" name="textfield2" rows="8" id="textfield"></textarea>
+    </br>
+    <p>Output:-</p>
+      <textarea id ="output" rows=10 cols=50></textarea>
+      <!-- <span id="postIDreturned"></span> -->
+</div>
+<div>
+  <footer class="footer-basic-centered">
+
+  			<p class="footer-company-motto">Lakshmi Narain College Of Technology, Bhopal</p>
+
+  			<p class="footer-links">
+  				<a href="#">&nbsp;&nbsp;Amresh Kumar&nbsp;&nbsp;</a>
+
+  				<a href="#">&nbsp;&nbsp;Ashish Prajapati&nbsp;&nbsp;</a>
+
+  				<a href="#">&nbsp;&nbsp;Pinkesh Barse&nbsp;&nbsp;</a>
+
+  			</p>
+        <p class="footer-company-name">Guided By </p>
+        <p class="footer-company-name">Associate Dhanpratap Singh</p>
+  			<p class="footer-company-name">2018</p>
+
+  		</footer>
+
+</div>
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  </body>
 </html>
